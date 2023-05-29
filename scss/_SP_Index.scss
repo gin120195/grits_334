@@ -1,0 +1,570 @@
+@media only screen and (max-width: 768px) {
+    .key{
+        margin-top: 60px;
+        width: calc(100% - 40px);
+        border-radius: 15px;
+    }
+    .home_page {
+        .key {      
+            height: calc(100vh - 80px);
+            max-height: 140vw;
+            .key_slider{
+                li{
+                    height: calc(100vh - 80px);
+                    max-height: 140vw;
+                    .key_img01{
+                        background-image: url(../images/idx_key_bg01_sp.jpg);
+                    }				
+                    .key_img02{
+                        background-image: url(../images/idx_key_bg02_sp.jpg);
+                    }				
+                    .key_img03{
+                        background-image: url(../images/idx_key_bg03_sp.jpg);
+                    }
+                }
+            }
+            .key_text {          
+                align-items: flex-end;
+                padding-bottom: 28vw;
+            }
+
+           .key_catch{
+                padding-left: 7vw;
+                margin-top: 0;
+                h2 {
+                    font-size: 30px;
+                    line-height: 1.6;
+                    span {
+                        &::after {}
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.6;
+                }
+           }
+           .idx_scroll{
+            bottom: 40px;
+            a{
+                font-size: 10px;
+                padding-bottom: 18px;
+                &::before{
+                    width: 22px;
+                    height: 9px;
+                }
+            }
+        }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .home_page .key {
+        .key_catch{
+            h2 {
+                font-size: 6vmin;
+                margin-bottom: 1.5vw;
+                span {
+                    &::after {}
+                }
+            }
+    
+            p {
+                font-size: 4.5vmin;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .home_page .key {
+        .key_catch{
+            h2 {
+                font-size: 5vmin;
+    
+                span {
+                    &::after {}
+                }
+            }
+    
+            p {
+                font-size: 3.5vmin;
+            }
+        }
+    }
+}
+
+// End Index Key Visual
+
+
+// End Index General
+@media only screen and (max-width: 768px) {
+  .tl_h3{
+    font-size: 26px;
+    .eng{
+        font-size: 15px;
+        margin-top: 4px;
+    }
+    &.h3_center{
+        font-size: 28px;
+        .eng{
+            font-size: 17px;
+            margin-top: 5px;
+        }
+    }
+  }
+  .txt_en{
+    font-size: 16vw;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 768px) {
+    .idx01 {
+        padding: 50px 0;
+        h3{
+            font-size: 24px;
+            margin-bottom: 5px;
+            .eng{
+                margin-left: 10px;
+                font-size: 12px;
+            }
+        }
+        .content{
+            .col{
+                width: 100%;
+                max-width: 640px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 25px 25px 35px;
+                &:first-child{
+                    margin-bottom: 30px;
+                }
+            }
+            li{
+               a{
+                    padding: 16px 0;
+                    .date {
+                        width: 85px;
+                    }
+
+                    .title {
+                        width: calc(100% - 85px);
+                        padding-left: 10px;
+                    }
+               }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .idx01{
+        h3{
+            justify-content: center;
+        }
+        .content{
+            .news_btn{
+                position: relative;
+                right: unset;
+                margin: 20px auto 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .idx02 {
+        padding: 15px 0 55px;
+        .idx_logo{
+            max-width: 345px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+        }
+        .box_info{
+            margin-bottom: 10px;
+            dl{
+                padding-bottom: 12px;
+                dt, dd{letter-spacing: 0.05em;}
+                dt{width: 85px;}
+                dd{width: calc(100% - 85px);}
+            }
+        }
+        .box_time{
+            table{
+                tr{
+                    th, td{
+                        &:first-child{width: 150px;}
+                        &:last-child{width: 15%;}
+                    }
+                }
+            }
+        }
+       .block_clinic {
+            .col{
+                &.col_info, &.col_map{
+                    width: 100%;
+                    max-width: 640px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &.col_info{
+                    margin-bottom: 30px;
+                    .box_in{
+                        max-width: 100%;
+                    }
+                }
+                &.col_map{
+                    height: 290px;
+                }
+            }
+       }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .idx02{
+        .box_time{
+            table{
+                tr{
+                    th, td{
+                        letter-spacing: 0.05em;
+                        &:first-child{width: 100px;}
+                    }
+                    th{
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .idx03 {
+        padding: 18vw 0 50px;
+        .tl_h3, .txt_sub{
+            text-align: center;
+        }
+        .tl_h3{
+            margin-bottom: 15px;
+        }
+        .txt_en{
+            top: -1.15em;
+            left: 0;
+            right: 0;
+        }
+        .txt_sub{
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .block_message{
+            max-width: 545px;
+            margin-left: auto;
+            margin-right: auto;
+            .message_img{
+                z-index: 1;
+                &::before{
+                    font-size: 1.823vw;
+                    max-width: 456px;
+                    width: 90%;
+                    height: 38.5714em;
+                    top: -3.5714em;
+                    right: -120px;
+                }
+            }
+            .message_content{
+                padding-top: 30px;
+                &::before{
+                    max-width: 220px;
+                    width: 65%;
+                    height: 350px;
+                    left: -120px;
+                    bottom: -100px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .idx04 {
+        padding: 70px 0 60px;
+        .tl_h3{
+            text-align: center;
+        }
+        .block_feature{
+            .feature_it{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                &.feature_tl {
+                    h3{
+                        padding-top: 0;
+                        padding-left: 0;
+                    }
+                }
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+                &_num{
+                    bottom: -20px;
+                    right: 20px;
+                    font-size: 80px;
+                }
+                &_img{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .cm_btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .idx04{
+        .block_feature{
+            .feature_it{
+                h4{
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .idx05{
+        padding: 50px 0 60px;
+        .tl_h3{margin-bottom: 24px;}
+        .block_menu {
+            margin: 0 -5px;
+            .menu_it{
+                width: calc(100%/2 - 10px);
+                margin: 5px;
+                min-height: 45vw;
+                padding: 45px 15px 40px;
+                &::before{
+                    bottom: 20px;
+                    right: 20px;
+                    width: 20px;
+                    height: 8px;
+                }
+                &:last-child{
+                    padding-top: 35px;
+                    .menu_it_ic{
+                        height: 62px;
+                    }
+                }
+                h4{
+                    font-size: 22px;
+                    margin: 15px 0;      
+                    .eng{
+                        font-size: 12px;
+                        letter-spacing: 0.05em;
+                        margin-top: 0;
+                    }              
+                }
+                &_ic{
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .idx05{
+        .block_menu {
+            margin: 0 -3px;
+            .menu_it{
+                width: 100%;
+                max-width: 380px;
+                margin: 5px auto;
+                min-height: 70vw;
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .idx06 {
+        padding: 55px 0 60px;
+        .tl_h3{
+            margin-bottom: 20px;
+        }
+        .block_trouble {
+            margin: 0;
+            .trouble_it{
+                width: calc(100%/2 - 20px);
+                margin: 10px;
+                &.ic01{
+                    margin-left: 10px;
+                }
+                &.ic07{
+                    .trouble_it_img{top: 0;}
+                }
+                &_img{
+                    height: 110px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 640px) {
+    .idx06 {
+        .block_trouble {
+            margin: 0;
+            .trouble_it{
+                width: calc(100%/2 - 1.4285em);
+                max-width: 21.3571em;
+                height: 21.3571em;
+                margin: 0.7142em;
+                font-size: 2.188vw;
+                padding-bottom: 0;
+                &.ic01{
+                    margin-left: 0.7142em;
+                }
+                &_img{
+                    height: 7.8571em;
+                }
+                h4{
+                    font-size: 1.71428em;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .idx06 {
+        .block_trouble {
+            .trouble_it{
+                h4{
+                    font-size: 2.2em;
+                    margin-top: 0.7em;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .idx07 {
+        .block_dermatology {
+            margin: 0;
+            .dermatology_it{
+                width: 100%;
+                margin: 0 auto 30px;
+                max-width: 475px;
+                height: 500px;
+                &:nth-child(2){
+                    .dermatology_it_icon{
+                        max-width: 65px;
+                    }
+                }
+                &_icon{
+                    max-width: 75px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &_title{
+                    padding: 20px 30px 10px 10px;
+                    h4{
+                        font-size: 20px;
+                        .eng{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .idx07 {
+        .block_dermatology {
+            .dermatology_it{
+                height: 116vw;
+                &:nth-child(2){
+                    .dermatology_it_icon{
+                        max-width: 14vw;
+                    }
+                }
+                &_icon{
+                    max-width: 15vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .idx08 {
+        .txt_en{
+            right: 0;
+            left: 0;
+            text-align: center;
+        }
+        .block_doctor {
+            .doctor_img, .doctor_cont{
+                width: 100%;
+                max-width: 640px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .doctor_img{
+                z-index: 1;
+				&::before{
+					width: 46.2142em;
+					height: 45.5em;
+					bottom: -7.5714em;
+					left: -17.1428em;
+					font-size: 1.094vw;
+				}
+			}
+			.doctor_cont{
+				padding-top: 45px;
+				padding-right: 20px;
+				&::before{
+                    max-width: 429px;
+                    width: 70%;
+                    height: 450px;
+                    top: -35px;
+                    right: -90px;
+				}
+                .box_in{
+                    max-width: 100%;
+                }
+			}
+            .gr_btn{
+                .cm_btn{
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+}

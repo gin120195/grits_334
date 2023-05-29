@@ -1,0 +1,282 @@
+
+/*INTERVIEW PAGE*/
+@media only screen and (max-width: 768px) {
+    .under{
+       &.page-interview {        
+            counter-reset: count;
+            .key {
+                height: 450px;
+                .key_text {
+                    padding-top: 0;
+                    padding-left: 1vw;
+                    padding-bottom: 40px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                }
+                h2 {
+                    margin-bottom: 30px;
+                    .en{
+                        font-size: 40px;
+                        margin-bottom: 8px;                 
+                    }
+                    .jp{
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 1.7;
+                }
+                .interview_name{
+                    padding-top: 5px;
+                    margin-top: 15px;
+                    .name{
+                        &_txt{
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                        &_jp{
+                            font-size: 24px;
+                        }
+                        &_en{
+                            font-size: 14px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            #mainContent {
+                .inner {
+                    section {
+                        &:first-of-type {
+                            padding-bottom: 80px;
+                            .interview {
+                                &_box {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            padding-bottom: 80px;
+                            &::before {
+                                height: calc(100% + 244px);
+                                top: -244px;
+                            }
+                            .interview {
+                                &_box {
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .interview{
+        &_catch {
+            margin-top: 0;
+			margin-bottom: 50px;
+            p{
+                font-size: 20px;
+                line-height: 1.4;
+            }
+            &.fz20 {
+                margin-top: 40px;
+                p{
+                    font-size: 17px;
+                    line-height: 1.6;
+                }
+            }
+            &.bg1 {
+                padding: 80px 0;
+            }
+            &.bg2 {
+                padding: 80px 0;
+            }
+        }
+        &_sec{
+			margin-top: 50px;
+        
+        }
+        &_content, &_img{
+            width: 100%;
+        }
+        &_content{
+            max-width: 590px;
+            margin: 0 auto;
+            padding-top: 10px;
+            h4{
+                //font-size: 22px;
+                margin-bottom: 7px;
+                //padding-bottom: 10px;
+                span {
+                    font-size: 14px;
+                    margin: 0;
+                    line-height: 35px;
+                }
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        &_img{
+            margin-bottom: 10px;
+            &:before{
+                left: 20px;
+                font-size: 70px;
+            }
+        }
+        &_box{
+            justify-content: center;
+            margin-bottom: 50px;
+            // &:last-child{margin-bottom: 0px;}
+            &.box_left{
+                .interview_content{
+                    margin-left: auto;
+                }
+            }
+            &.box_right{
+                .interview_content{
+                    margin-right: auto;
+                }
+            }
+            &.top {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1439px) and (min-width:769px) {
+    .under {
+        &.page-interview {
+            #mainContent {
+                .inner {
+                    section {
+                        .interview {
+                            &_box {
+                                .interview_content {
+                                    padding: 0;
+                                    flex-grow:1;
+                                    max-width: unset;
+                                    width: calc(55% - 80px)
+                                }
+                                &.top {
+                                    margin-top: 40px;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            padding-bottom: 50px;
+                            &::before {
+                                top: -280px;
+                                height: calc(100% + 280px);
+                            }
+                        }
+                    }
+                    .interview {
+                        &_catch {
+                            &.bg1 {
+                                padding: 50px 0;
+                                margin: 0                   ;
+                            }
+                            &.bg2 {
+                                padding: 50px 0;
+                            }
+                        }
+                        p {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .under{
+        &.page-short-interview,&.page-interview {   
+            .key {
+                .key_text {
+                }
+                h2 {
+                    margin-bottom: 4vw;
+                    .en{
+                        font-size: 10vw;                
+                    }
+                    .jp{
+                        font-size: 4vw;
+                    }
+                }
+                p {
+                    font-size: 4.6vw;
+                }
+                .interview_name{
+                    padding-top: 1vw;
+                    margin-top: 5vw;
+                    .name{
+                        &_txt{
+                            font-size: 4vw;
+                        }
+                        &_jp{
+                            font-size: 5vw;
+                        }
+                        &_en{
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
+            }
+            #mainContent {
+                .interview {
+                    &_box {
+                        //margin-top: 30px;
+                    }
+                }
+            }
+        }
+        
+        &.page-interview{
+            .key{
+                h2{
+                    .en{
+                        font-size: 11vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .under {
+        &.page-interview {
+            #mainContent {
+                .inner {
+                    section {
+                        &:first-of-type {
+                            padding-bottom: 50px;
+                        }
+                        &:nth-of-type(2) {
+                            padding-bottom: 50px;
+                        }
+                    }
+                    .interview {
+                        &_catch {
+                            &.bg1{
+                                padding: 50px 0;
+                            }
+                            &.bg2 {
+                                padding: 50px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

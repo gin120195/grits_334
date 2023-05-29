@@ -1,0 +1,165 @@
+// Name - Internet Explorer
+// Desc - Media target only IE browser.
+@mixin before(){
+	content: "";
+	display: block;
+	position: absolute;
+	transition: all .3s;
+}
+@mixin IE($version) {
+	@if $version == 'both' {
+	    @media screen and (-ms-high-contrast: none) {
+	    	/* all IE versions <= 11 */
+	        @content;
+	    }
+		@supports (-ms-ime-align: auto) {
+			/* for Microsoft EDGE */
+			@content;
+		}
+	}
+	@else if $version == 'edge' {
+		@supports (-ms-ime-align: auto) {
+			/* for Microsoft EDGE */
+			@content;
+		}
+	}
+	@else if $version == '>=10' {
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			/* for IE 10 and above */
+			@content;
+		}
+	}
+	@else if $version == '>=9' {
+		@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+			/* for IE 9 and above */
+			@content;
+		}
+	}
+	@else if $version == '9' {
+		@media screen and (min-width:0\0) and (min-resolution: .001dpcm) {
+			/* for IE 9 only */
+			@content;
+		}
+	}
+	@else if $version == '8-10' {
+		@media screen\0 {
+			/* for IE 8,9 and 10 */
+			@content;
+		}
+	}
+	@else if $version == '8' {
+		@media \0screen {
+			/* for IE 8 */
+			@content;
+		}
+	}
+	@else if $version == '6-8' {
+		@media \0screen\,screen\9 {
+			/* for IE 6, 7 and 8 */
+			@content;
+		}
+	}
+	@else if $version == '6-7' {
+		@media screen\9 {
+			/* for IE 6 and 7 */
+			@content;
+		}
+	}
+}
+
+
+// Name - Fire Fox
+// Desc - Media target only Fire Fox browser.
+@mixin FF() {
+	@-moz-document url-prefix() {
+		/* Fire Fox */
+		@content;
+	}
+}
+
+
+// Name - Google Chrome
+// Desc - Media target only Google Chrome browser.
+@mixin GC() {
+	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+		/* Chrome 29+ */
+		@content;
+	}
+}
+
+
+// Name - Safari
+// Desc - Media target only Safari browser.
+@mixin iOS() {
+	@supports (-webkit-touch-callout: none) {
+		/* Specific to iOS devices */ 
+		@content;
+	}
+	@media not all and (min-resolution:.001dpcm) {
+		@supports (-webkit-appearance:none) {
+			/* Safari */
+			@content;
+		}
+	}
+}
+@mixin MAC() {
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		/* Mac Safari (6.1 to 10.0) and Chrome */
+		@content;
+	}
+}
+
+
+
+
+// Name - Only Screen
+// Desc - Media Query for viewport
+@mixin screen($vw) {
+
+	@if ($vw == 'min769') { // for PC only
+		@media only screen and (min-width: 769px) {
+			@content;
+		}
+	}
+	@else if ($vw == '769-1000') {
+		@media only screen and (min-width: 769px) and (max-width: 1000px) {
+			@content;
+		}
+	}
+	@else if ($vw == '769-1170') {
+		@media only screen and (min-width: 769px) and (max-width: 1170px) {
+			@content;
+		}
+	}
+	@else if ($vw == '769-1280') {
+		@media only screen and (min-width: 769px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+	@else if ($vw == '769-1400') {
+		@media only screen and (min-width: 769px) and (max-width: 1400px) {
+			@content;
+		}
+	}
+	@else if ($vw == 'max768') { // for SP only
+		@media only screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if ($vw == 'max640') { // 640px and below
+		@media only screen and (max-width: 640px) {
+			@content;
+		}
+	}
+	@else if ($vw == 'max600') { // 640px and below
+		@media only screen and (max-width: 600px) {
+			@content;
+		}
+	}
+	@else if ($vw == 'max425') { // 425px and below
+		@media only screen and (max-width: 425px) {
+			@content;
+		}
+	}
+
+}
